@@ -1,0 +1,43 @@
+/*Замовлення*/
+.substrate {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #C4C4C4;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../img/hero-back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.order {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+
+}
+
+.order__title {
+
+    color: $white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+
+
+.order__button {
+    display: inline;
+    margin-top: 30px;
+    min-width: 216px;
+
+}

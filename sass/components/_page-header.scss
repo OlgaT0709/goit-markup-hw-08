@@ -1,0 +1,14 @@
+/*Шапка сайта */
+.page-header {
+    background-color: $white-color;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo--black {
+    color: $black-color;
+}

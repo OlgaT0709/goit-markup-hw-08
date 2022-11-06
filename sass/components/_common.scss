@@ -1,0 +1,137 @@
+/*Загальні настройки */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /*outline: 1px solid tomato;*/
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /*outline: 2px solid green;*/
+
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    fill: currentColor;
+}
+
+/*Лого*/
+.logo {
+    color: $blue-color;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    outline: none;
+
+}
+
+/* Соцмережа */
+.social__list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+    @include transitionRules ();
+}
+
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    @include transitionRules (background-color);
+}
+
+/*Кнопка*/
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    min-width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    &--blue {
+            color: $white-color;
+            background-color: $blue-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+}
+
+
+.button__icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+
+    &--white {
+            fill: $white-color;
+        }
+}
+
+
+
+
+
