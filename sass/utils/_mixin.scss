@@ -14,5 +14,13 @@
 
 /*.benefits__item--$benefitsIcons::before {
     background-image: url(../img/$benefitsIcons.svg);
-}
+}*/
 
+@mixin widthScreen($widthList) {
+        @each $width in $widthList {
+            @media screen and (min-width: $width) {
+                    width: $width;
+            
+                }
+        }
+    }

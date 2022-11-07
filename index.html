@@ -234,7 +234,7 @@
 
                 <!-- Соцмережа -->
                 <div class="social team__social">
-                  <ul class="social__list">
+                  <ul class="social__list social__list--position">
                     <li class="social__item">
                       <a class="social__link " href="https://www.instagram.com/" aria-label="instagram"
                         target="_blank" rel="noopener noreferrer">
@@ -279,7 +279,7 @@
                 <p class="team__position" lang="en">Frontend Developer</p>
                 <!-- Соцмережа -->
                 <div class="social team__social">
-                  <ul class="social__list">
+                  <ul class="social__list social__list--position">
                     <li class="social__item">
                       <a class="social__link " href="https://www.instagram.com/" aria-label="instagram" target="_blank"
                         rel="noopener noreferrer">
@@ -324,7 +324,7 @@
                 <p class="team__position" lang="en">Marketing</p>
                 <!-- Соцмережа -->
                 <div class="social team__social">
-                  <ul class="social__list">
+                  <ul class="social__list social__list--position">
                     <li class="social__item">
                       <a class="social__link " href="https://www.instagram.com/" aria-label="instagram" target="_blank"
                         rel="noopener noreferrer">
@@ -369,7 +369,7 @@
                 <p class="team__position" lang="en">UI Designer</p>
                 <!-- Соцмережа -->
                 <div class="social team__social">
-                  <ul class="social__list">
+                  <ul class="social__list social__list--position">
                     <li class="social__item">
                       <a class="social__link " href="https://www.instagram.com/" aria-label="instagram" target="_blank"
                         rel="noopener noreferrer">
@@ -417,42 +417,42 @@
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list">
             <li class="clients__item">
-              <a class="clients__company" href="" >
+              <a class="clients__link" href="" >
                 <svg class="icon clients__icon">
                   <use href="./img/sprite.svg#icon-Logo1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a class="clients__company" href="">
+              <a class="clients__link" href="">
                 <svg class="icon clients__icon">
                   <use href="./img/sprite.svg#icon-Logo-2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a class="clients__company" href="">
+              <a class="clients__link" href="">
                 <svg class="icon clients__icon">
                   <use href="./img/sprite.svg#icon-Logo-3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a class="clients__company" href="">
+              <a class="clients__link" href="">
                 <svg class="icon clients__icon">
                   <use href="./img/sprite.svg#icon-Logo-4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a class="clients__company" href="">
+              <a class="clients__link" href="">
                 <svg class="icon clients__icon">
                   <use href="./img/sprite.svg#icon-Logo-5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a class="clients__company" href="">
+              <a class="clients__link" href="">
                 <svg class="icon clients__icon">
                   <use href="./img/sprite.svg#icon-Logo-6"></use>
                 </svg>
@@ -466,66 +466,67 @@
     <!-- Підвал сторінки -->
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <!--Лого -->
-        <div>
-          <a href="./index.html" class="logo" lang="en">
-            <span >Web</span><span class="logo--white">Studio</span>
-          </a>
-          <!--Адреса -->
-          <address class="address page-footer__address">
-            <ul>
-              <li class="address__item">
-                <a class="address__link address__link--white"
-                  href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
-                  target="_blank" rel="noopener noreferrer">
-                  м. Київ, пр-т Лесі Українки, 26
+        <div class="container__logo-address-social">
+          <!--Лого -->
+          <div class="container__logo-address">
+            <a href="./index.html" class="logo" lang="en">
+              <span >Web</span><span class="logo--white">Studio</span>
+            </a>
+            <!--Адреса -->
+            <address class="address page-footer__address">
+              <ul>
+                <li class="address__item">
+                  <a class="address__link address__link--white"
+                    href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                    target="_blank" rel="noopener noreferrer">
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              </ul>
+            </address>         
+          </div>
+          
+          <!-- Соцмережа -->
+          <div class="social page-footer__social">
+            <h2 class="social__title">Приєднуйтесь</h2>         
+            <ul class="social__list social__list--positionStart ">
+              <li class="social__item">
+                <a class="social__link social__link--grey" href="https://www.instagram.com/" aria-label="instagram" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon social__icon icon--white">
+                    <use href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-              <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-          </address>         
+              <li class="social__item">
+                <a class="social__link social__link--grey" href="https://twitter.com/" aria-label="twitter" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon social__icon icon--white">
+                    <use href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--grey" href="https://www.facebook.com/" aria-label="facebook" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon social__icon icon--white">
+                    <use href="./img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--grey" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon social__icon icon--white">
+                    <use href="./img/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>    
+          </div>
         </div>
-        
-        <!-- Соцмережа -->
-        <div class="social page-footer__social">
-          <h2 class="social__title">Приєднуйтесь</h2>         
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--grey" href="https://www.instagram.com/" aria-label="instagram" target="_blank" rel="noopener noreferrer">
-                <svg class="icon social__icon icon--white">
-                  <use href="./img/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--grey" href="https://twitter.com/" aria-label="twitter" target="_blank" rel="noopener noreferrer">
-                <svg class="icon social__icon icon--white">
-                  <use href="./img/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--grey" href="https://www.facebook.com/" aria-label="facebook" target="_blank" rel="noopener noreferrer">
-                <svg class="icon social__icon icon--white">
-                  <use href="./img/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--grey" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank" rel="noopener noreferrer">
-                <svg class="icon social__icon icon--white">
-                  <use href="./img/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>    
-        </div>
-
         <!--Підписатися на розсилку -->
         <form class="signup-form page-footer__signup-form" name="signup-form" autocomplete="on" novalidate>
-          <label class="signup-form__label">Підпишіться на розсилку
-            <input class="signup-form__input" type="email" name="email" placeholder="Email"/> <!--autofocus placeholder="example@gmail.com"-->
+          <label for="signup-form" class="signup-form__label">Підпишіться на розсилку
+            <input id="signup-form" class="signup-form__input" type="email" name="email" placeholder="Email"/> <!--autofocus placeholder="example@gmail.com"-->
           </label>
         
         <!--Кнопка -->

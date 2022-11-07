@@ -11,4 +11,12 @@
 
 .logo--black {
     color: $black-color;
+   
+}
+
+@media screen and (max-width: calc($tablet - 1px)) {
+    .page-header__container {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }

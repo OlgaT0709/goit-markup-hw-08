@@ -16,17 +16,11 @@ $benefitsIcons: "antena", "clock", "diagram", "astronaut";
 
 /*.benefits__item--antena::before {
     background-image: url(../img/antena.svg);
-}
-
-.benefits__item--clock::before {
-    background-image: url(../img/clock.svg);
-}
-
-.benefits__item--diagram::before {
-    background-image: url(../img/diagram.svg);
-}
-
-.benefits__item--astronaut::before {
-    background-image: url(../img/astronaut.svg);
 }*/
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+$widthScreen: $mobile, $tablet, $desktop;
 

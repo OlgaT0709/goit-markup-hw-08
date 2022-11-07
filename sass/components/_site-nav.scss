@@ -1,13 +1,24 @@
 /*Навігація сайту*/
-.site-nav {
-    display: flex;
-    align-items: center;
+
+
+@media screen and (max-width: calc($tablet - 1px)) {
+    .site-nav__list {
+        display: none;
+    }
 }
 
-.site-nav__list {
-    display: flex;
-    margin-left: 93px;
+@media screen and (min-width: calc($tablet)) {
+    .site-nav {
+            display: flex;
+            align-items: center;
+        }
+    .site-nav__list {
+            display: flex;
+            margin-left: 93px;
+        }
 }
+
+
 
 .site-nav__item:not(:last-child) {
     margin-right: 50px;
