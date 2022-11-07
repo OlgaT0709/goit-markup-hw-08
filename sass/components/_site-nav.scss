@@ -1,25 +1,5 @@
 /*Навігація сайту*/
 
-
-@media screen and (max-width: calc($tablet - 1px)) {
-    .site-nav__list {
-        display: none;
-    }
-}
-
-@media screen and (min-width: calc($tablet)) {
-    .site-nav {
-            display: flex;
-            align-items: center;
-        }
-    .site-nav__list {
-            display: flex;
-            margin-left: 93px;
-        }
-}
-
-
-
 .site-nav__item:not(:last-child) {
     margin-right: 50px;
 }
@@ -45,8 +25,6 @@
     }
 }
 
-
-
 .site-nav__link--active {
     position: relative;
     color: $blue-color;
@@ -66,3 +44,21 @@
     }
 }
 
+/* Медіа запити*/
+@media screen and (max-width: calc($tablet - 1px)) {
+    .site-nav__list {
+        display: none;
+    }
+}
+
+@media screen and (min-width: calc($tablet)) {
+    .site-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .site-nav__list {
+        display: flex;
+        margin-left: 93px;
+    }
+}

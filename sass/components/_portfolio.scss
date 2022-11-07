@@ -1,17 +1,7 @@
 /*Портфоліо*/
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.portfolio__item {
-
-    /*width: 370px;*/
-    flex-basis: calc((100% - 60px)/3);
-    @include transitionRules (box-shadow);
-    
-
+    display: block;
+         
 }
 
 .portfolio__link {
@@ -98,3 +88,39 @@
     letter-spacing: 0.03em;
 
 }
+
+/* Медіа запити*/
+@media screen and (max-width: calc($mobile - 1px)) {
+.portfolio__item:not(:last-child) {
+    margin-bottom:  30px;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)){
+    .portfolio__item {
+
+    /*width: 354px;*/
+    flex-basis: calc((100% - 30px)/2);
+    @include transitionRules (box-shadow);
+    }
+
+}
+
+@media screen and (min-width: $desktop) {
+    .portfolio__item {
+
+        /*width: 370px;*/
+        flex-basis: calc((100% - 60px)/3);
+        @include transitionRules (box-shadow);
+    }
+
+}
+

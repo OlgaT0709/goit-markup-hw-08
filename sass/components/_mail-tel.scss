@@ -1,37 +1,5 @@
 /*Телефон та мейл*/
 
-@media screen and (max-width: calc($tablet - 1px)) {
-    .mail-tel {
-        display: none;
-    }
-}
-
-@media screen and (min-width: calc($tablet)) {
-    .mail-tel {
-        display: block;
-        margin-left: auto;
-
-    }
-}
-
-@media screen and (min-width: calc($desktop)) {
-        .mail-tel {
-            display: flex;
-            margin-left: auto;
-            align-items: center;
-        }
-    
-        .mail-tel__item:not(:last-child) {
-            margin-right: 30px;
-        }
-
-        .mail-tel__link {
-            padding-top: 32px;
-            padding-bottom: 32px;
-
-        } 
-}
-
 .mail-tel__icon {
     margin-right: 10px;
     @include transitionRules ();
@@ -70,3 +38,35 @@
     }
 }
 
+/* Медіа запити*/
+@media screen and (max-width: calc($tablet - 1px)) {
+    .mail-tel {
+        display: none;
+    }
+}
+
+@media screen and (min-width: calc($tablet)) {
+    .mail-tel {
+        display: block;
+        margin-left: auto;
+
+    }
+}
+
+@media screen and (min-width: calc($desktop)) {
+    .mail-tel {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .mail-tel__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .mail-tel__link {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+    }
+}

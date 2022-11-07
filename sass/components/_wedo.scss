@@ -1,11 +1,5 @@
 /*Чим ми займаємося */
 
-@media screen and (max-width: calc($desktop - 1px)) {
-    .wedo {
-        display: none;
-    }
-}
-
 .wedo {
     padding-top: 0;
 }
@@ -75,3 +69,9 @@
     color: $white-color;
 }
 
+/* Медіа запити*/
+@media screen and (max-width: calc($desktop - 1px)) {
+    .wedo {
+        display: none;
+    }
+}

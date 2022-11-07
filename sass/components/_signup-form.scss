@@ -32,9 +32,9 @@
 
 .signup-form__input {
     margin-top: 20px;
+    
     padding-left: 16px;
     width: 100%;
-    max-width: 358px;
     min-height: 50px;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -44,22 +44,4 @@
 }
 
 
-@media screen and (min-width: $desktop) {
-    .signup-form {
-        display: flex;
-        justify-content: flex-start;
-    }
 
-    .signup-form__label {
-        margin-right: 12px;
-        width: 358px;
-    }
-
-    .signup-form__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translateY(+35px);
-
-    }
-}

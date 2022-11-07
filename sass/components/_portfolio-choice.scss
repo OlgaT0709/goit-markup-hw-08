@@ -1,12 +1,7 @@
 /*Вибір типу Портфоліо*/
 .portfolio-choice {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.portfolio-choice__item:not(:last-child) {
-    margin-right: 8px;
+   
 }
 
 .portfolio-choice__button {
@@ -40,3 +35,25 @@
     }
 }
 
+/* Медіа запити*/
+@media screen and  (max-width: calc($desktop - 1px)) {
+    .portfolio-choice {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px 8px;
+        margin-bottom: 40px;
+}
+
+
+}
+
+@media screen and (min-width: $tablet) {
+    .portfolio-choice {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .portfolio-choice__item:not(:last-child) {
+        margin-right: 8px;
+    }
+}
