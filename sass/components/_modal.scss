@@ -14,8 +14,15 @@
             pointer-events: none;
             opacity: 0;
         }
+        
+    overflow-y: scroll;
 
 }
+
+.backdrop.modal-open {
+    overflow: hidden;
+}
+
 
 .backdrop--is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
@@ -25,11 +32,12 @@
     position: absolute;
     display: block;
 
+    min-width: 320px;
+    min-height: 609px;
+
     top: 50%;
     left: 50%;
-
-    min-width: 450px;
-    min-height: 609px;
+    
     background-color: $white-color;
     box-shadow:
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -42,16 +50,14 @@
 
 }
 
-/* Медіа запити*/
-@media screen and (min-width: calc($desktop)) {
+@media screen and (max-width: calc($mobile - 31px)) {
     .modal {
         
-        min-width: 528px;
-        min-height: 581px;
+        width: 100%;
+        min-height: 609px;
     }
-
-    .accept__label {
-       font-size: 12px;
+    .backdrop {
+        padding: 15px;
     }
 }
 
@@ -305,3 +311,25 @@
     }
 }
 
+/* Медіа запити*/
+@media screen and (min-width: calc($mobile - 30px)) {
+    .modal {
+
+        min-width: 450px;
+        min-height: 609px;
+    }
+
+   }
+
+
+@media screen and (min-width: $desktop) {
+    .modal {
+
+        min-width: 528px;
+        min-height: 581px;
+    }
+
+    .accept__label {
+        font-size: 12px;
+    }
+}
