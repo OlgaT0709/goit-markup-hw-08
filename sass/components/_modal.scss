@@ -19,11 +19,6 @@
 
 }
 
-.backdrop.modal-open {
-    overflow: hidden;
-}
-
-
 .backdrop--is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
 }
@@ -48,17 +43,17 @@
     transform: translate(-50%, -50%) scale(1) rotateZ(1turn);
     @include transitionRules (transform);
 
-}
+    @media screen and (max-hight: 608px) {
+            & {
+                top: 0%;
+                left: 50%;
+                transform: translateY(-50%) scale(1) rotateZ(1turn);
+               
+    
+            }
+    
+        }
 
-@media screen and (max-width: calc($mobile - 31px)) {
-    .modal {
-        
-        width: 100%;
-        min-height: 609px;
-    }
-    .backdrop {
-        padding: 15px;
-    }
 }
 
 .close {
@@ -312,6 +307,18 @@
 }
 
 /* Медіа запити*/
+@media screen and (max-width: calc($mobile - 31px)) {
+    .modal {
+
+        width: 100%;
+        min-height: 609px;
+    }
+
+    .backdrop {
+        padding: 15px;
+    }
+}
+
 @media screen and (min-width: calc($mobile - 30px)) {
     .modal {
 
@@ -333,3 +340,4 @@
         font-size: 12px;
     }
 }
+

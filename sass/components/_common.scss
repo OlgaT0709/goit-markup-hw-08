@@ -49,6 +49,10 @@ ul {
 
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 /* Медіа запити*/
 @media screen and (min-width: $desktop) {
     .section {
