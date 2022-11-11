@@ -1,6 +1,6 @@
 /* Меню сайту на мобільном */
 .button__menu {
-    z-index: 2;
+    z-index: 3;
     display: block;
     margin-left: auto;
     padding: 0;
@@ -32,13 +32,14 @@
 
     @include transitionRules ();
     
-        .button__menu:hover &  {
+        .button__menu:active &  {
             fill: $blue-color;
             outline: none;
         }
 }
 
 .menu__container {
+    z-index: 2;
     display: none;
     position: absolute;
     top: 0;

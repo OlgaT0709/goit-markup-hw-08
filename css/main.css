@@ -491,7 +491,7 @@ body.modal-open {
 }
 /* Меню сайту на мобільном */
 .button__menu {
-  z-index: 2;
+  z-index: 3;
   display: block;
   margin-left: auto;
   padding: 0;
@@ -518,12 +518,13 @@ body.modal-open {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button__menu:hover .icon__menu {
+.button__menu:active .icon__menu {
   fill: #2196F3;
   outline: none;
 }
 
 .menu__container {
+  z-index: 2;
   display: none;
   position: absolute;
   top: 0;
