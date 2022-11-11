@@ -40,12 +40,13 @@
 
 .menu__container {
     z-index: 2;
+    overflow: scroll;
     display: none;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     padding: 48px 0 48px 40px;
 
     background-color: $white-color;
@@ -70,7 +71,7 @@
 
     &:last-child {
         margin: 0;
-        margin-bottom: 150px;
+        margin-bottom: 30%;
     }
 }
 .mail-tel__link--menu-mail {
