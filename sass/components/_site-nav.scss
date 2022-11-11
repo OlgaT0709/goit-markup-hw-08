@@ -29,24 +29,11 @@
     position: relative;
     color: $blue-color;
 
-    &::after {
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-
-        display: block;
-        content: '';
-        height: 4px;
-        width: 100%;
-        border-radius: 2px;
-        background-color: $blue-color;
-
-    }
 }
 
 /* Медіа запити*/
 @media screen and (max-width: calc($tablet - 1px)) {
-    .site-nav__list {
+    .site-nav {
         display: none;
     }
 }
@@ -60,5 +47,23 @@
     .site-nav__list {
         display: flex;
         margin-left: 93px;
+    }
+
+    .site-nav__link--active {
+        display: inline-block;
+
+        &::after {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+
+            display: block;
+            content: '';
+            height: 4px;
+            width: 100%;
+            border-radius: 2px;
+            background-color: $blue-color;
+
+        }
     }
 }

@@ -15,7 +15,7 @@
             opacity: 0;
         }
         
-    overflow-y: scroll;
+
 
 }
 
@@ -26,9 +26,7 @@
 .modal {
     position: absolute;
     display: block;
-
-    min-width: 320px;
-    min-height: 609px;
+    overflow-y: scroll;
 
     top: 50%;
     left: 50%;
@@ -43,17 +41,7 @@
     transform: translate(-50%, -50%) scale(1) rotateZ(1turn);
     @include transitionRules (transform);
 
-    @media screen and (max-hight: 608px) {
-            & {
-                top: 0%;
-                left: 50%;
-                transform: translateY(-50%) scale(1) rotateZ(1turn);
-               
     
-            }
-    
-        }
-
 }
 
 .close {
@@ -311,12 +299,14 @@
     .modal {
 
         width: 100%;
-        min-height: 609px;
+        max-height: 100%;
     }
 
     .backdrop {
         padding: 15px;
     }
+
+    
 }
 
 @media screen and (min-width: calc($mobile - 30px)) {

@@ -1,0 +1,123 @@
+/* Меню сайту на мобільном */
+.button__menu {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    & .icon__menu--close {
+        display: none;
+    }
+
+    &.button__menu--is-open .icon__menu--close {
+        display: block;
+    }
+
+    &.button__menu--is-open .icon__menu--open {
+        display: none;
+    }
+
+}
+
+.icon__menu {
+    width: 40px;
+    height: 40px;
+
+    @include transitionRules ();
+    
+        .button__menu:hover &,
+        .button__menu:focus & {
+            fill: $blue-color;
+            outline: none;
+        }
+}
+
+.menu__container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    padding-left: 48px;
+
+    background-color: $white-color;
+       
+    &.menu--is-open {
+        display: inline-block;
+    }
+    
+}
+
+.site-nav__link--menu {
+    font-size: 40px;
+    }
+
+.site-nav__item--menu {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &:last-child {
+        margin-bottom: 100%;
+    }
+}
+.mail-tel__link--menu-mail {
+    font-size: 34px;
+        }        
+.mail-tel__link--menu-tel {
+    font-size: 24px;
+            
+}
+
+.mail-tel__item--menu {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &:last-child {
+        margin-bottom: 64px;
+    }
+}
+
+.social__list--menu{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social__item--menu {
+    display: inline-block;
+}
+.social__item--menu:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+        
+}
+
+.social__name {
+    color: $blue-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc (22/18);    
+    letter-spacing: 0.06em;
+    
+    
+}
+
+
+
+
+/* Медіа запити*/
+@media screen and (min-width: $tablet) {
+    .button__menu {
+        display: none;
+    }
+    .menu__container.menu--is-open {
+        display: none;
+    }
+    
+
+}
