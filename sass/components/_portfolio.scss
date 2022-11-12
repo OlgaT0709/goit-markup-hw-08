@@ -3,6 +3,9 @@
     display: block;
          
 }
+.portfolio__item {
+    flex-basis: 100%;
+}
 
 .portfolio__link {
     text-decoration: none;

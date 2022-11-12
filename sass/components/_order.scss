@@ -44,20 +44,32 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .substrate {
-        background-image: url(../img/hero-back-mobile@2x.jpg);
+        background-image: 
+        linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../img/hero-back-mobile@2x.jpg);
     }
 }
 
 @media screen and (min-width :$tablet) {
     .substrate {
-        background-image: url(../img/hero-back-tablet.jpg);
+        background-image: 
+        linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../img/hero-back-tablet.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .substrate {
-            background-image: url(../img/hero-back-tablet@2x.jpg);
+            background-image: 
+            linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../img/hero-back-tablet@2x.jpg);
         }
     }
 
@@ -65,14 +77,22 @@
 
 @media screen and (min-width :$desktop) {
     .substrate {
-        background-image: url(../img/hero-back-desktop.jpg);
+        background-image: 
+        linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../img/hero-back-desktop.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .substrate {
-            background-image: url(../img/hero-back-desktop@2x.jpg);
+            background-image: 
+            linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../img/hero-back-desktop@2x.jpg);
         }
     }
 

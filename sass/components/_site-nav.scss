@@ -13,7 +13,7 @@
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: var(--black-color);
+    color: $black-color;
     text-decoration: none;
 
     @include transitionRules (color);

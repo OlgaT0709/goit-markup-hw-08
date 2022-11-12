@@ -4,6 +4,9 @@
     .benefits__item:not(:last-child) {
             margin-bottom: 30px;
         }
+    .benefits__title {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: $tablet) {

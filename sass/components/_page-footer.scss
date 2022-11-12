@@ -129,17 +129,19 @@
     }
 
     .signup-form__input {
-        min-width: 450px;
+        max-width: 450px;
     }
 }
+
 
 
 @media screen and (min-width: $desktop) {
     .page-footer__container {
         display: flex;
+        text-align: start;
     }
-
-    .social__list--positionStart {
+        
+    .social__list--positionStart  {
         justify-content: flex-start;
     }
 
@@ -156,6 +158,7 @@
 
     .signup-form__label {
         margin-right: 12px;
+        text-align: start;
     }
 
     .signup-form__input {

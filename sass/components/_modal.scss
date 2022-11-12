@@ -94,7 +94,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--black-color);
+    color: $black-color;
 }
 
 .data-form {
@@ -266,12 +266,11 @@
 }
 
 .accept::before {
-    position: relative;
+    position: absolute;
     display: flex;
     content: '';
     width: 16px;
     height: 15px;
-    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
