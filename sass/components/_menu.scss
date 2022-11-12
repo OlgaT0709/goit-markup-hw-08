@@ -32,7 +32,7 @@
 
     @include transitionRules ();
     
-        .button__menu:active &  {
+        .button__menu:hover &  {
             fill: $blue-color;
             outline: none;
         }
