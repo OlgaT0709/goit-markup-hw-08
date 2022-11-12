@@ -28,7 +28,7 @@
     position: absolute;
     display: block;
     
-    top: 50%;
+    top: 0;
     left: 50%;
     
     background-color: $white-color;
@@ -38,7 +38,7 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    transform: translate(-50%, -50%) scale(1) rotateZ(1turn);
+    transform: translate(0, -50%) scale(1) rotateZ(1turn);
     @include transitionRules (transform);
 
     
@@ -317,6 +317,19 @@
 
    }
 
+@media screen and (min-width: $tablet) {
+    .modal {
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%) scale(1) rotateZ(1turn);
+        @include transitionRules (transform);
+       
+    }
+
+    
+}
 
 @media screen and (min-width: $desktop) {
     .modal {

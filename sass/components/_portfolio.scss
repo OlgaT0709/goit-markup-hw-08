@@ -4,12 +4,15 @@
          
 }
 .portfolio__item {
+    display: block;
     flex-basis: 100%;
+    
 }
 
 .portfolio__link {
     text-decoration: none;
-    display: inline-block;
+    display: block;
+    min-height: 100%;
 
     &:hover,
     &:focus {
@@ -29,7 +32,7 @@
 
 .portfolio__img-back {
     position: absolute;
-    display: inline-block;
+    display: block;
     top: 0;
     left: 0;
     height: 100%;
@@ -65,9 +68,9 @@
 
 
 .portfolio__title-text {
-
+    display: block;
     padding: 20px 24px;
-
+    min-height: 100%;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
@@ -75,7 +78,7 @@
 
 .portfolio__title {
     margin-bottom: 4px;
-
+    min-height: max-content;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -89,6 +92,7 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    color:$text-color;
 
 }
 
