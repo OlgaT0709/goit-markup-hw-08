@@ -10,7 +10,7 @@
             linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../img/hero-back-mobile.jpg);
+        url(../img/mobile/hero-back-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -48,7 +48,7 @@
         linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../img/hero-back-mobile@2x.jpg);
+        url(../img/mobile/hero-back-mobile@2x.jpg);
     }
 }
 
@@ -58,7 +58,7 @@
         linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../img/hero-back-tablet.jpg);
+        url(../img/tablet/hero-back-tablet.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -69,7 +69,7 @@
             linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../img/hero-back-tablet@2x.jpg);
+            url(../img/tablet/hero-back-tablet@2x.jpg);
         }
     }
 

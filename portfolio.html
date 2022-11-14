@@ -160,21 +160,69 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__back">
+
+<!--
+                  <picture>
+                    <source srcset="" media="" sizes="" type="" />
+                    <source srcset="" media="" sizes="" type="" />
+                    <img src="" alt="" />
+                  </picture>
+
+                  sizes=" (min-width:1200px) 33vw,
+                  (min-width:768px ) 50vw,
+                  100vw "/> -->
+
                   <picture>
                     <source 
+                    srcset="./img/mobile/technokrak.webp 450w,
+                            ./img/mobile/technokrak@2x.webp 900w" 
+                    media="(max-width:767px)" 
+                    sizes=" 100vw"
+                    type="image/webp" >
+
+                    <source 
+                    srcset="./img/mobile/technokrak.jpg 450w,
+                            ./img/mobile/technokrak@2x.jpg 900w" 
+                    media="(max-width:767px)" 
+                    sizes=" 100vw" 
+                    type="image/jpg" >
+
+                    <source 
+                    srcset="./img/tablet/technokrak.webp 354w,
+                            ./img/tablet/technokrak@2x.webp 708w" 
+                    media="(min-width:768px)" 
+                    sizes=" 50vw"
+                    type="image/webp" >
+
+                    <source 
+                    srcset="./img/tablet/technokrak.jpg 354w,
+                            ./img/tablet/technokrak@2x.jpg 708w" 
+                    media="(min-width:768px)" 
+                    sizes=" 50vw"
+                    type="image/jpg">
+
+                   <source 
                     srcset="./img/technokrak.webp 370w,
                             ./img/technokrak@2x.webp  740w" 
+                    media="(min-width: 1200px)"
+                    sizes=" 33vw"                        
                     type="image/webp">
-                    <img 
-                    src="./img/technokrak.jpg" 
-                    alt="Технокряк"
+
+                    <source
                     srcset="./img/technokrak.jpg 370w,
                             ./img/technokrak@2x.jpg 740w"
+                    media="(min-width:  1200px)"
+                    sizes=" 33vw"
+                    type="image/jpg">
+
+                    <img src="./img/technokrak.jpg" 
+                    alt="Технокряк"
                     sizes=" (min-width:1200px) 33vw,
                             (min-width:768px ) 50vw,
-                                              100vw "  
-                            >
-                  </picture>
+                                              100vw "
+                    >
+                                        
+                  </picture> 
                   <div class="portfolio__img-back">
                     <p class="portfolio__text-back"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.
@@ -190,19 +238,59 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__back">
+                 
                   <picture>
-                    <source srcset="./img/poster-no.webp 370w,
-                                    ./img/poster-no@2x.webp  740w" 
-                            type="image/webp">
+                    <source 
+                      srcset="./img/mobile/poster-no.webp 450w,
+                              ./img/mobile/poster-no@2x.webp 900w" 
+                      media="(max-width:767px)" 
+                      sizes=" 100vw"
+                      type="image/webp">
+                    
+                    <source 
+                      srcset="./img/mobile/poster-no.jpg 450w,
+                              ./img/mobile/poster-no@2x.jpg 900w" 
+                      media="(max-width:767px)" 
+                      sizes=" 100vw"
+                      type="image/jpg">
+                    
+                    <source 
+                      srcset="./img/tablet/poster-no.webp 354w,
+                              ./img/tablet/poster-no@2x.webp 708w" 
+                      media="(min-width:768px)" 
+                      sizes=" 50vw"
+                      type="image/webp">
+                    
+                    <source 
+                      srcset="./img/tablet/poster-no.jpg,
+                              ./img/tablet/poster-no@2x.jpg 708w" 
+                      media="(min-width:768px)" 
+                      sizes=" 50vw"
+                      type="image/jpg">
+                    
+                    <source 
+                      srcset="./img/poster-no.webp 370w,
+                              ./img/poster-no@2x.webp  740w" 
+                      media="(min-width: 1200px)" 
+                      sizes=" 33vw"
+                      type="image/webp">
+                    
+                    <source 
+                      srcset="./img/poster-no.jpg 370w
+                              ./img/poster-no@2x.jpg 740w" 
+                      media="(min-width:  1200px)" 
+                      sizes=" 33vw" 
+                      type="image/jpg">
+
                     <img 
                     src="./img/poster-no.jpg" 
                     alt="Постер" 
-                    srcset="./img/poster-no.jpg 370w,
-                            ./img/poster-no@2x.jpg 740w"
                     sizes=" (min-width:1200px) 33vw,
                             (min-width:768px ) 50vw,
                                               100vw "
                         >
+
+
                   </picture>
                   <div class="portfolio__img-back">
                     <p class="portfolio__text-back"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
@@ -222,14 +310,31 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__back">
                   <picture>
+                    <source srcset="./img/mobile/restaurant-seafood.webp 450w,
+                                                ./img/mobile/restaurant-seafood@2x.webp 900w" media="(max-width:767px)" sizes=" 100vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/mobile/restaurant-seafood.jpg 450w,
+                                                ./img/mobile/restaurant-seafood@2x.jpg 900w" media="(max-width:767px)" sizes=" 100vw"
+                      type="image/jpg">
+                    
+                    <source srcset="./img/tablet/restaurant-seafood.webp 354w,
+                                                ./img/tablet/restaurant-seafood@2x.webp 708w" media="(min-width:768px)" sizes=" 50vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/tablet/restaurant-seafood.jpg 354w,
+                                                ./img/tablet/restaurant-seafood@2x.jpg 708w" media="(min-width:768px)" sizes=" 50vw"
+                      type="image/jpg">
+                    
                     <source srcset="./img/restaurant-seafood.webp 370w,
-                                    ./img/restaurant-seafood@2x.webp  740w" 
-                            type="image/webp">
+                                                ./img/restaurant-seafood@2x.webp  740w" media="(min-width: 1200px)" sizes=" 33vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/restaurant-seafood.jpg 370w,
+                                                ./img/restaurant-seafood@2x.jpg 740w" media="(min-width:  1200px)" sizes=" 33vw" type="image/jpg">
                     <img 
                     src="./img/restaurant-seafood.jpg" 
                     alt="Ресторан "
-                    srcset="./img/restaurant-seafood.jpg 370w,
-                            ./img/restaurant-seafood@2x.jpg 740w"
                     sizes=" (min-width:1200px) 33vw,
                             (min-width:768px ) 50vw,
                                               100vw "  
@@ -253,14 +358,32 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__back">
                   <picture>
+                    <source srcset="./img/mobile/prime.webp 450w,
+                                                ./img/mobile/prime@2x.webp 900w" media="(max-width:767px)" sizes=" 100vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/mobile/prime.jpg 450w,
+                                                ./img/mobile/prime@2x.jpg 900w" media="(max-width:767px)" sizes=" 100vw"
+                      type="image/jpg">
+                    
+                    <source srcset="./img/tablet/prime.webp 354w,
+                                                ./img/tablet/prime@2x.webp 708w" media="(min-width:768px)" sizes=" 50vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/tablet/prime.jpg 354w,
+                                                ./img/tablet/prime@2x.jpg 708w" media="(min-width:768px)" sizes=" 50vw"
+                      type="image/jpg">
+                    
                     <source srcset="./img/prime.webp 370w,
-                                    ./img/prime@2x.webp  740w"
-                            type="image/webp">
+                                                ./img/prime@2x.webp  740w" media="(min-width: 1200px)" sizes=" 33vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/prime.jpg 370w,
+                                                ./img/prime@2x.jpg 740w" media="(min-width:  1200px)" sizes=" 33vw" type="image/jpg">
                     <img 
                     src="./img/prime.jpg" 
                     alt="Проєкт перший"
-                    srcset="./img/prime.jpg 370w,
-                            ./img/prime@2x.jpg 740w"
+                 
                     sizes=" (min-width:1200px) 33vw,
                             (min-width:768px ) 50vw,
                                               100vw "
@@ -285,14 +408,32 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__back">
                   <picture>
+                    <source srcset="./img/mobile/boxes.webp 450w,
+                                                ./img/mobile/boxes@2x.webp 900w" media="(max-width:767px)" sizes=" 100vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/mobile/boxes.jpg 450w,
+                                                ./img/mobile/boxes@2x.jpg 900w" media="(max-width:767px)" sizes=" 100vw"
+                      type="image/jpg">
+                    
+                    <source srcset="./img/tablet/boxes.webp 354w,
+                                                ./img/tablet/boxes@2x.webp 708w" media="(min-width:768px)" sizes=" 50vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/tablet/boxes.jpg 354w,
+                                                ./img/tablet/boxes@2x.jpg 708w" media="(min-width:768px)" sizes=" 50vw"
+                      type="image/jpg">
+                    
                     <source srcset="./img/boxes.webp 370w,
-                                    ./img/boxes@2x.webp  740w"
-                            type="image/webp">
+                                                ./img/boxes@2x.webp  740w" media="(min-width: 1200px)" sizes=" 33vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/boxes.jpg 370w,
+                                                ./img/boxes@2x.jpg 740w" media="(min-width:  1200px)" sizes=" 33vw" type="image/jpg">
                     <img 
                     src="./img/boxes.jpg" 
                     alt="Проєкт коробки" 
-                    srcset="./img/boxes.jpg 370w,
-                            ./img/boxes@2x.jpg 740w"
+        
                     sizes=" (min-width:1200px) 33vw,
                             (min-width:768px ) 50vw,
                                               100vw ">
@@ -316,14 +457,32 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__back">
                   <picture>
+                    <source srcset="./img/mobile/inspiration.webp 450w,
+                                                ./img/mobile/inspiration@2x.webp 900w" media="(max-width:767px)" sizes=" 100vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/mobile/inspiration.jpg 450w,
+                                                ./img/mobile/inspiration@2x.jpg 900w" media="(max-width:767px)" sizes=" 100vw"
+                      type="image/jpg">
+                    
+                    <source srcset="./img/tablet/inspiration.webp 354w,
+                                                ./img/tablet/inspiration@2x.webp 708w" media="(min-width:768px)" sizes=" 50vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/tablet/inspiration.jpg 354w,
+                                                ./img/tablet/inspiration@2x.jpg 708w" media="(min-width:768px)" sizes=" 50vw"
+                      type="image/jpg">
+                    
                     <source srcset="./img/inspiration.webp 370w,
-                                    ./img/inspiration@2x.webp  740w" 
-                            type="image/webp">
+                                                ./img/inspiration@2x.webp  740w" media="(min-width: 1200px)" sizes=" 33vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/inspiration.jpg 370w,
+                                                ./img/inspiration@2x.jpg 740w" media="(min-width:  1200px)" sizes=" 33vw" type="image/jpg">
                     <img 
                     src="./img/inspiration.jpg" 
                     alt="Вдохновение" 
-                    srcset="./img/inspiration.jpg 370w,
-                            ./img/inspiration@2x.jpg 740w"
+                   
                     sizes=" (min-width:1200px) 33vw,
                             (min-width:768px ) 50vw,
                                               100vw "
@@ -347,14 +506,32 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__back">
                   <picture>
-                    <source srcset="./img/edition.webp 370w,
-                                    ./img/edition@2x.webp  740w" 
-                            type="image/webp">
+                            <source srcset="./img/mobile/edition.webp 450w,
+                                                        ./img/mobile/editionk@2x.webp 900w" media="(max-width:767px)" sizes=" 100vw"
+                              type="image/webp">
+                            
+                            <source srcset="./img/mobile/edition.jpg 450w,
+                                                        ./img/mobile/edition@2x.jpg 900w" media="(max-width:767px)" sizes=" 100vw"
+                              type="image/jpg">
+                            
+                            <source srcset="./img/tablet/edition.webp 354w,
+                                                        ./img/tablet/edition@2x.webp 708w" media="(min-width:768px)" sizes=" 50vw"
+                              type="image/webp">
+                            
+                            <source srcset="./img/tablet/edition.jpg 354w,
+                                            ./img/tablet/edition@2x.jpg 708w" media="(min-width:768px)" sizes=" 50vw"
+                              type="image/jpg">
+                            
+                            <source srcset="./img/edition.webp 370w,
+                                                        ./img/edition@2x.webp  740w" media="(min-width: 1200px)" sizes=" 33vw"
+                              type="image/webp">
+                            
+                            <source srcset="./img/edition.jpg 370w,
+                                                        ./img/edition@2x.jpg 740w" media="(min-width:  1200px)" sizes=" 33vw" type="image/jpg">
                     <img 
                     src="./img/edition.jpg" 
                     alt="Видання" 
-                    srcset="./img/edition.jpg 370w,
-                            ./img/edition@2x.jpg 740w"
+                    
                     sizes=" (min-width:1200px) 33vw,
                             (min-width:768px ) 50vw,
                                               100vw "
@@ -378,14 +555,32 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__back">
                   <picture>
+                    <source srcset="./img/mobile/lab.webp 450w,
+                                                ./img/mobile/lab@2x.webp 900w" media="(max-width:767px)" sizes=" 100vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/mobile/lab.jpg 450w,
+                                                ./img/mobile/lab@2x.jpg 900w" media="(max-width:767px)" sizes=" 100vw"
+                      type="image/jpg">
+                    
+                    <source srcset="./img/tablet/lab.webp 354w,
+                                                ./img/tablet/lab@2x.webp 708w" media="(min-width:768px)" sizes=" 50vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/tablet/lab.jpg 354w,
+                                                ./img/tablet/lab@2x.jpg 708w" media="(min-width:768px)" sizes=" 50vw"
+                      type="image/jpg">
+                    
                     <source srcset="./img/lab.webp 370w,
-                                    ./img/lab@2x.webp  740w" 
-                            type="image/webp">
+                                                ./img/lab@2x.webp  740w" media="(min-width: 1200px)" sizes=" 33vw"
+                      type="image/webp">
+                    
+                    <source srcset="./img/lab.jpg 370w,
+                                                ./img/lab@2x.jpg 740w" media="(min-width:  1200px)" sizes=" 33vw" type="image/jpg">
                     <img 
                     src="./img/lab.jpg" 
                     alt="Проєкт Лаб" 
-                    srcset="./img/lab.jpg 370w,
-                            ./img/lab@2x.jpg 740w"
+                    
                     sizes=" (min-width:1200px) 33vw,
                             (min-width:768px ) 50vw,
                                               100vw "
@@ -409,14 +604,32 @@
               <a class="portfolio__link" href="">
                 <div class="portfolio__back">
                   <picture>
-                    <source srcset="./img/business.webp 370w,
-                                    ./img/business@2x.webp  740w" 
-                            type="image/webp">
+                      <source srcset="./img/mobile/business.webp 450w,
+                                                  ./img/mobile/business@2x.webp 900w" media="(max-width:767px)" sizes=" 100vw"
+                        type="image/webp">
+                      
+                      <source srcset="./img/mobile/business.jpg 450w,
+                                                  ./img/mobile/business@2x.jpg 900w" media="(max-width:767px)" sizes=" 100vw"
+                        type="image/jpg">
+                      
+                      <source srcset="./img/tablet/business.webp 354w,
+                                                  ./img/tablet/business@2x.webp 708w" media="(min-width:768px)" sizes=" 50vw"
+                        type="image/webp">
+                      
+                      <source srcset="./img/tablet/business.jpg 354w,
+                                                  ./img/tablet/businessk@2x.jpg 708w" media="(min-width:768px)" sizes=" 50vw"
+                        type="image/jpg">
+                      
+                      <source srcset="./img/business.webp 370w,
+                                                  ./img/business@2x.webp  740w" media="(min-width: 1200px)" sizes=" 33vw"
+                        type="image/webp">
+                      
+                      <source srcset="./img/business.jpg 370w,
+                                                  ./img/business@2x.jpg 740w" media="(min-width:  1200px)" sizes=" 33vw" type="image/jpg">
                     <img 
                     src="./img/business.jpg" 
                     alt="Бізнес" 
-                    srcset="./img/business.jpg 370w,
-                            ./img/business@2x.jpg 740w"
+       
                     sizes=" (min-width:1200px) 33vw,
                             (min-width:768px ) 50vw,
                                               100vw "

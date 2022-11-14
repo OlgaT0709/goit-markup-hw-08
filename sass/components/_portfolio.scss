@@ -10,9 +10,10 @@
 }
 
 .portfolio__link {
-    text-decoration: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
     min-height: 100%;
+    text-decoration: none;
 
     &:hover,
     &:focus {
@@ -70,6 +71,7 @@
 .portfolio__title-text {
     display: block;
     padding: 20px 24px;
+    flex-grow: 1;
     min-height: 100%;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
