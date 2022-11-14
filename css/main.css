@@ -649,7 +649,7 @@ body.modal-open {
 .modal {
   position: absolute;
   display: block;
-  top: 15px;
+  top: 0;
   left: 50%;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -901,8 +901,8 @@ body.modal-open {
   display: -ms-flexbox;
   display: flex;
   content: "";
-  width: 16px;
-  height: 15px;
+  width: 15px;
+  height: 14px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
