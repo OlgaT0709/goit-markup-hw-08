@@ -144,12 +144,6 @@
 
 }
 
-.data-form__accept {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-
-}
 
 .data-form__label {
     margin-bottom: 4px;
@@ -234,54 +228,41 @@
 
 
 .accept {
-    position: relative;
     display: flex;
-    margin-right: 8px;
-}
-
-.accept__input--hidden {
-    appearance: none;
+    justify-content: center;
+    margin-bottom: 30px;
     cursor: pointer;
+    
 }
 
-.accept__icon {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    pointer-events: none;
 
-    background-color: $blue-color;
-    fill: $white-color;
+.accept__icon--uncheck {
+    opacity: 1;
+    fill: $black-color;
 
     @include transitionRules (opacity);
 
-    .accept__input:checked + & {
-        opacity: 1;
-        outline: none;
+    .accept__input:checked + .accept__icon & {
+        opacity: 0;
 
     }
 
 }
 
-.accept::before {
-    position: absolute;
+.accept__icon--check {
+    opacity: 0;
     
-    content: '';
-    width: 15px;
-    height: 14px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid $black-color;
-    border-radius: 2px;
-    @include transitionRules (border);
+    @include transitionRules (opacity);
+
+    .accept__input:checked + .accept__icon & {
+            opacity: 1;
+    
+        }
+
 }
 
-
-
 .accept__label {
+   
     margin-left: 7px;
     font-weight: 400;
     font-size: 12px;
