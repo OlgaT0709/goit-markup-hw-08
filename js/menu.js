@@ -7,7 +7,7 @@
         const expanded = mobileMenu.getAttribute("aria-expanded") === "true" || false;
         mobileMenu.setAttribute("aria-expanded", !expanded);
       
-        mobileMenu.classList.toggle("button__menu--is-open");
+        mobileMenu.classList.toggle("menu__button--is-open");
         mobileMenuRef.classList.toggle("menu--is-open");
         logoRef.classList.toggle("logo--is-close");
         document.body.classList.toggle("modal-open")
