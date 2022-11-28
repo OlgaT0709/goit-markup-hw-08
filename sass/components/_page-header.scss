@@ -3,6 +3,11 @@
     
     background-color: $white-color;
     border-bottom: 1px solid #ECECEC;
+    position: fixed;
+    left:0;
+    top:0; 
+    width: 100vw;
+    z-index: 3;
 }
 
 .page-header__container {

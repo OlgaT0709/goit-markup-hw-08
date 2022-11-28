@@ -200,6 +200,11 @@ body.modal-open {
 .page-header {
   background-color: #FFFFFF;
   border-bottom: 1px solid #ECECEC;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 3;
 }
 
 .page-header__container {
@@ -569,6 +574,7 @@ body.modal-open {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .order {
