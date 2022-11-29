@@ -145,11 +145,14 @@
         justify-content: flex-start;
     }
 
-    .page-footer__social {
+        .page-footer__social {
         margin-left: 70px;
         margin-top: 12px;
     }
 
+    .container__input-button{
+        margin-top: 20px;
+    }
     .page-footer__signup-form {
         display: block;
         margin-top: 12px;
@@ -167,7 +170,7 @@
 
     .signup-form__button {
         margin-left: 12px;
-        transform: translateY(+20px);
+        // transform: translateY(+20px);
 
     }
 

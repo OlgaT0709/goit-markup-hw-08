@@ -167,7 +167,8 @@ body.modal-open {
   text-align: center;
   padding: 0;
   min-width: 200px;
-  height: 50px;
+  max-width: 216px;
+  min-height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -565,6 +566,11 @@ body.modal-open {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .signup-form__input {
+    margin-top: 0;
+  }
+}
 /*Замовлення*/
 .substrate {
   max-height: 600px;
@@ -1633,6 +1639,9 @@ body.modal-open {
     margin-left: 70px;
     margin-top: 12px;
   }
+  .container__input-button {
+    margin-top: 20px;
+  }
   .page-footer__signup-form {
     display: block;
     margin-top: 12px;
@@ -1647,8 +1656,6 @@ body.modal-open {
   }
   .signup-form__button {
     margin-left: 12px;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
   }
   .container__input-button {
     display: -webkit-box;
