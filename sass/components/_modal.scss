@@ -97,17 +97,12 @@
     color: $black-color;
 }
 
-.data-form {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 
 .data-form__button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     @include transitionRules (background-color);
 
     &:hover,

@@ -139,13 +139,11 @@ body.modal-open {
 
 /*Кнопка*/
 .button {
-    
-    text-align: center;
     padding: 0;
-
     min-width: 200px;
     max-width: 216px;
     min-height: 50px;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
@@ -160,7 +158,7 @@ body.modal-open {
     &--blue {
             color: $white-color;
             background-color: $blue-color;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            
         }
 }
 
