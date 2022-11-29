@@ -67,7 +67,6 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /*outline: 1px solid tomato;*/
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -88,7 +87,6 @@ ul {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  /*outline: 2px solid green;*/
 }
 
 body.modal-open {
@@ -166,7 +164,6 @@ body.modal-open {
 
 /*Кнопка*/
 .button {
-  display: inline-block;
   text-align: center;
   padding: 0;
   min-width: 200px;
@@ -562,6 +559,12 @@ body.modal-open {
   border-radius: 4px;
 }
 
+.container__input-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*Замовлення*/
 .substrate {
   max-height: 600px;
@@ -593,7 +596,6 @@ body.modal-open {
 }
 
 .order__button {
-  display: inline;
   margin-top: 30px;
 }
 
@@ -1561,6 +1563,20 @@ body.modal-open {
   outline: none;
 }
 
+.signup-form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Медіа запити*/
 @media screen and (max-width: 767px) {
   .page-footer__social {
@@ -1584,19 +1600,6 @@ body.modal-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .signup-form__button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
