@@ -41,7 +41,8 @@
 
 .menu__container {
     z-index: 2;
-    display: none;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -50,10 +51,24 @@
     padding: 48px 0 48px 40px;
     overflow: auto;
     background-color: $white-color;
+    transform: scale(0); 
+
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transform-origin: 100% 0%;
        
     &.menu--is-open {
-        display: flex;
-        flex-direction: column;
+        pointer-events: initial;
+
+        transition-property: opacity, visibility, transform ;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+        transform: scale(1); 
+        opacity: 1;
+        visibility: visible;
+            
         
     }
        

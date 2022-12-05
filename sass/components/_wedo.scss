@@ -24,6 +24,7 @@
 .wedo__item {
     /*{width: 370px;} */
     flex-basis: calc((100% - 60px)/3);
+    overflow: hidden;
 }
 
 .wedo__item:not(:last-child){
@@ -43,11 +44,23 @@
         height: 70px;
         width: 100%;
         background-color: rgba(47, 48, 58, 0.8);
+        z-index: 2;
 
     }
+    
 
 }
 
+.wedo__img {
+    /* animation */
+    @include transitionRules (transform);
+    
+        .wedo__item:hover & {
+            transform: scale(1.2);
+        }
+    z-index: 1;
+
+}
 
 
 .wedo__text-back {
@@ -67,7 +80,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $white-color;
-}
+
+    z-index: 3;
+
+   }
 
 /* Медіа запити*/
 @media screen and (max-width: calc($desktop - 1px)) {
