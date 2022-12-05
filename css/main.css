@@ -410,9 +410,6 @@ body.modal-open {
           transform: scale(0);
   -webkit-transform-origin: 100% 0%;
           transform-origin: 100% 0%;
-}
-.menu__container.menu--is-open {
-  pointer-events: initial;
   -webkit-transition-property: opacity, visibility, -webkit-transform;
   transition-property: opacity, visibility, -webkit-transform;
   transition-property: opacity, visibility, transform;
@@ -421,6 +418,9 @@ body.modal-open {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__container.menu--is-open {
+  pointer-events: initial;
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
