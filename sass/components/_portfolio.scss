@@ -26,12 +26,12 @@
     }
 }
 
-.portfolio__back {
+.portfolio__thumb {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio__img-back {
+.portfolio__wrapper {
     position: absolute;
     display: block;
     top: 0;
@@ -40,7 +40,7 @@
     width: 100%;
     background-color: rgba(33, 150, 243, 0.9);
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     @include transitionRules (transform);
 
     .portfolio__link:hover &,

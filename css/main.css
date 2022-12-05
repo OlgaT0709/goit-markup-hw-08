@@ -403,12 +403,11 @@ body.modal-open {
   padding: 48px 0 48px 40px;
   overflow: auto;
   background-color: #FFFFFF;
-  -webkit-transform: scale(0);
-          transform: scale(0);
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   -webkit-transform-origin: 100% 0%;
           transform-origin: 100% 0%;
 }
@@ -717,6 +716,10 @@ body.modal-open {
 }
 .order__button {
   margin-top: 30px;
+}
+.order__button:hover, .order__button:focus {
+  background-color: #188CE8;
+  outline: none;
 }
 
 /* Медіа запити*/
@@ -1555,12 +1558,12 @@ body.modal-open {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__back {
+.portfolio__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio__img-back {
+.portfolio__wrapper {
   position: absolute;
   display: block;
   top: 0;
@@ -1568,14 +1571,14 @@ body.modal-open {
   height: 100%;
   width: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__link:hover .portfolio__img-back, .portfolio__link:focus .portfolio__img-back {
+.portfolio__link:hover .portfolio__wrapper, .portfolio__link:focus .portfolio__wrapper {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   outline: none;
@@ -1738,6 +1741,10 @@ body.modal-open {
           align-items: center;
   margin-left: auto;
   margin-right: auto;
+}
+.signup-form__button:hover, .signup-form__button:focus {
+  background-color: #188CE8;
+  outline: none;
 }
 
 /* Медіа запити*/
