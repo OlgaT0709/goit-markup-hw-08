@@ -191,15 +191,46 @@
     bottom: 11px;
     fill: $black-color;
     @include transitionRules ();
+    
 
     .data-form__input:hover+&,
     .data-form__input:focus+& {
         fill: $blue-color;
-        outline: none;
+        outline: none;      
 
     }
 
+    .data-form__input:focus+& {
+        animation: vibrate 300ms linear 5 both;
+     }
+
 }
+
+   @keyframes vibrate {
+       0% {
+           transform: translate(0);
+       }
+
+       20% {
+           transform: translate(-2px, 2px);
+       }
+
+       40% {
+           transform: translate(-2px, -2px);
+       }
+
+       60% {
+           transform: translate(2px, 2px);
+       }
+
+       80% {
+           transform: translate(2px, -2px);
+       }
+
+       100% {
+           transform: translate(0);
+       }
+   }
 
 .data-form__textarea {
     height: 120px;

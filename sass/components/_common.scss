@@ -47,7 +47,6 @@ ul {
 
 .container {
     min-width: 320px;
-    // width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -56,7 +55,15 @@ ul {
     // outline-offset: -2px;
 
     @include widthScreen($widthScreen);
-    
+
+    // @media screen and (min-width: 480px) {
+    //     & { width: 480px; }}
+
+    // @media screen and (min-width: 768px) {
+    //     & {width: 768px; }}
+
+    // @media screen and (min-width: 1200px) {
+    //     & {width: 1200px;}}    
 }
 
 
@@ -155,12 +162,13 @@ body.modal-open {
     outline: none;
 
     cursor: pointer;
-
+    
     &--blue {
             color: $white-color;
             background-color: $blue-color;
             
         }
+    
 }
 
 
